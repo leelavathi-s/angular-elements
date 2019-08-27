@@ -9,6 +9,4 @@ const files = [
 ]
 await fs.ensureDir('feedback')
 await concat(files, 'feedback/feedback.js');
-await fs.copyFile('./dist/feedback/styles.css', 'feedback/styles.css')
-await fs.copy('./dist/feedback/assets/', 'feedback/assets/' )
 })()
